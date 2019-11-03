@@ -5,7 +5,7 @@ require 'mime/types'
 module Attachmentable
   extend ActiveSupport::Concern
 
-  MAX_MATRIX_LIMIT = 16_777_216 # 4096x4096px or approx. 16MB
+  MAX_MATRIX_LIMIT = 78_643_200 # 5120x5120px 
 
   included do
     before_post_process :set_file_extensions
